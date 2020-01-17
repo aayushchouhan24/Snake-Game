@@ -30,7 +30,7 @@ fimg = pygame.transform.scale(fimg, (screen_width, screen_height))
 
 #Food Image
 foodpic = pygame.image.load('Food.png')
-foodpic = pygame.transform.scale(foodpic, (45, 50)).convert_alpha()
+foodpic = pygame.transform.scale(foodpic, (45, 50))
 
 #Icon
 ipic = pygame.image.load('Icon.png')
@@ -117,7 +117,7 @@ def gameloop():
     velocity_x = 0
     velocity_y = 0
     init_velocity = 2    
-    fps = 60
+    fps = 10
     food_x = random.randint(20, screen_width / 2)
     food_y = random.randint(20, screen_height / 2)
     
@@ -239,6 +239,5 @@ def gameloop():
             clock.tick(fps)
 
 game_intro()
-gameloop()      
 pygame.quit()
 quit()
