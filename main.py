@@ -136,18 +136,11 @@ def gameloop():
             crashed()
             gameWindow.fill(0)
             gameWindow.blit(oimg, (0, 0))
-            pygame.display.update()
+            pygame.display.update()           
             time.sleep(2)
             game_intro()
-            
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    exit_game = True
-
-                if event.type == pygame.KEYDOWN:
-                    if event.key == pygame.K_RETURN:
-                        game_intro()
-
+               
+                        
         else:
 
             for event in pygame.event.get():
