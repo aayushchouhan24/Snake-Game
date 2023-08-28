@@ -1,6 +1,6 @@
 # Snake Game with Pygame
 
-![Gameplay](assets\images\gameplay.gif)
+![Gameplay](https://github.com/aayushchouhan24/Snake-Game/blob/master/assets/images/gameplay.gif?raw=true)
 
 ## Introduction
 
